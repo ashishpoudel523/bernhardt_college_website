@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KBC Website</title>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<style>
+    #button{
+        margin-top:10px;
+    }
+    .silder{
+        opacity: 0.9;
+    }
+
+    .carousel-caption{
+        background-color: rgba(0, 0, 0, 0.333);
+        color: yellow;
+        
+    }
+    
+    .register{
+        background-color: rgb(240, 207, 207);
+    }
+
+    
+    .profile{
+	margin-top: 13px;
+	height: 150px;
+	width: 100%;
+        background-color: black;
+    }
+    .m{
+        color: white;
+        font-size: 25px;
+        width: 25%;
+        background-color: purple;
+        height: 100%;
+        float: left;
+    }
+    .m p{
+        padding :40px;
+        margin-left: 35px;
+    }
+    .n{
+        color: white;
+        font-size: 25px;
+        width: 25%;
+        background-color: purple;
+        height: 100%;
+        float: left;
+    }
+    .n p{
+        padding :40px;
+        margin-left: 35px;
+    }
+    .o{
+        color: white;
+        font-size: 25px;
+        width: 25%;
+        background-color: purple;
+        height: 100%;
+        float: left;
+    }
+    .o p{
+        padding :40px;
+        margin-left: 35px;
+    }
+    .p{
+        color: white;
+        font-size: 25px;
+        width: 25%;
+        background-color: purple;
+        height: 100%;
+        float: left;
+    }
+    .p p{
+        padding :40px;
+        margin-left: 35px;
+    }
+
+    .division{
+	padding-left:50px;
+	height: 370px;
+    }
+
+    .in img{
+        height: 8cm;
+        width: 8cm;
+        float: left;
+        margin:10px;
+        opacity: 0.7;
+    }
+    .in img:hover{
+        opacity: 1;
+    }
+    
+    
+
+    .b{
+			height: 550px;
+			width: 100%;
+			background-color: #16e5f2;
+		}
+		.c{
+			height: 95%;
+			width: 23%;
+			background-color: red;
+			margin: 1%;
+			float: right;
+		}
+		.c img{
+			height: 40%;
+			width:100%;
+		}
+		.c p{
+			height: 55%;
+			width: 95%;
+			margin: 4%;
+			color: white;
+		}
+		.d{
+			height: 95%;
+			width: 23%;
+			background-color: orange;
+			margin: 1%;
+			float: right;
+		}
+		.d img{
+			height: 40%;
+			width:100%;
+		}
+		.d p{
+			height: 55%;
+			width: 95%;
+			margin: 4%;
+			color: #3a0967;
+		}
+		.e{
+			height: 95%;
+			width: 23%;
+			background-color: purple;
+			margin: 1%;
+			float: right;
+		}
+		.e img{
+			height: 40%;
+			width:100%;
+		}
+		.e p{
+			height: 55%;
+			width: 95%;
+			margin: 4%;
+			color: white;
+		}
+		.f{
+			height: 95%;
+			width: 23%;
+			background-color: #ea9af1;
+			margin: 1%;
+			float: right;
+		}
+		.f img{
+			height: 40%;
+			width:100%;
+		}
+		.f p{
+			height: 55%;
+			width: 95%;
+			margin: 4%;
+			color: black;
+		}
+
+        .parallex{
+           
+            height: 500px;
+            width: 100%;
+            background-image: url(./img/qaa.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        p.neb{
+            background-color: #d6ee6b;
+            width: 34%;
+            color: black;
+            margin: 250px   440px;
+            position: absolute;
+            font-size: 44px;
+            text-align: center;
+            font-family: arial;
+            font-weight: lighter;
+            letter-spacing: 15px;
+        }
+
+        .office{
+	padding: 50px  175px;
+	background-color:#c3bff6;
+    }
+    p.me{
+        text-align: center;
+        font-size: 30px;
+        font-family: cambria;
+        letter-spacing: 6px;
+        color:#3f6731;
+    }
+    p.you{
+        text-align: center;
+        font-size: 17px;
+        font-family: kalimati;
+        letter-spacing: 1px;
+        font-style: italic;
+    }
+    p.they{
+        text-align: center;
+        font-size: 17px;
+        font-family: kalimati;
+        letter-spacing: 1px;
+        font-weight: bold;
+    }	
+
+    /* STYLES SPECIFIC TO FOOTER  */
+    .footer {
+    width: 100%;
+    position: relative;
+    height: auto;
+    background-color: #070617;
+    }
+    .footer .col {
+    width: 190px;
+    height: auto;
+    float: left;
+    box-sizing: border-box;
+    padding: 0px 20px 20px 20px;
+    }
+    .footer .col h1 {
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 17px;
+    padding: 20px 0px 5px 0px;
+    color: rgba(255,255,255,0.2);
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.250em;
+    }
+    .footer .col ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    }
+    .footer .col ul li {
+    color: #999999;
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: bold;
+    padding: 5px 0px 5px 0px;
+    cursor: pointer;
+    }
+    .social ul li {
+    display: inline-block;
+    padding-right: 5px !important;
+    }
+
+    .footer .col ul li:hover {
+    color: #ffffff;
+    }
+    .clearfix {
+    clear: both;
+    }
+
+
+
+
+
+</style>
+
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <img src="./img/kbc.jpg" alt="" srcset=""  style="height: 55px; width: 250px">
+          </div>
+          <ul class="nav navbar-nav">
+            <li><a href="#">HOME</a></li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">ABOUT
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">OVERVIEW</a></li>
+                  <li><a href="#">STATUS</a></li>
+                  <li><a href="#">FACILITIES</a></li>
+                  <li><a href="#">TEACHING STAFFS</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">COURSES
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">MANAGEMENT</a></li>
+                  <li><a href="#">SCIENCE</a></li>
+                  <li><a href="#">HUMANITIES</a></li>
+                  <li><a href="#">SYLLABUS</a></li>
+                </ul>
+            </li>
+            <li><a href="#">EVENTS</a></li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">STUDENTS
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">ADMISSION</a></li>
+                  <li><a href="#">STUDENT'S UNION</a></li>
+                  <li><a href="#">FEEDBACK</a></li>
+                  <li><a href="#">ALUMINI</a></li>
+                </ul>
+            </li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+          <form class="nav navbar-form navbar-right" action="#">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search" name="search">
+              <div class="input-group-btn">
+                <button class="btn btn-default" type="submit">
+                  <i class="glyphicon glyphicon-search"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+          <ul class="nav navbar-nav navbar-right" id="button">
+            <button type="button" class="btn btn-danger"><span class="glyphicon glyphicon-user"> SIGNUP</span></button>
+            <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-log-in">  LOGIN</span></button>
+            
+          </ul>
+        </div>
+      </nav>
+      <!-- NAVBAR -->
+
+      <div class="container-fluid">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+      
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+      
+            <div class="item active">
+              <img src="./img/bern.jpg" class="silder" style="height: 560px; width: 100%;" background-size="cover" alt="Los Angeles" style="width:100%;">
+              <div class="carousel-caption">
+                <h3>Welcome to KBC</h3>
+                <p>Bafal, Kathmandu</p>
+              </div>
+            </div>
+      
+            <div class="item">
+              <img src="./img/roshan.JPG" class="silder" style="height: 560px; width: 100%;" alt="Chicago" style="width:100%;">
+              <div class="carousel-caption">
+                <h3>Academic Progress</h3>
+                <p>Trubhuwan University</p>
+              </div>
+            </div>
+          
+            <div class="item">
+              <img src="./img/qaa.JPG" class="silder" style="height: 560px; width: 100%;" alt="New York" style="width:100%;">
+              <div class="carousel-caption">
+                <h3>QAA Certified</h3>
+                <p>First Private College for certification!</p>
+              </div>
+            </div>
+        
+          </div>
+      
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+
+
+      <div class="about-register">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8">
+              <h2 style="color: blueviolet;">Welcome to <span style="color: rgb(10, 189, 4); font-size: 40px; font-family:dolphin;"><b>Kathmandu BernHardt College</b></span></h2>
+              <div class="row" style="text-align: justify;">
+                <div class="col-md-12">
+                  <img src="img/college-building.jpg" class="img-fluid img-lft" alt="" />
+                  <p>Kathmandu BernHardt College is a unique institution designed to disseminate quality education to students. The college is offering Bachelors degree in Management (BBS), Bachelor of Arts (BA/BASW) and Bachelor in Computer Science and Information Technology (B.Sc CSIT), Bachelor in Business Management (BBM), Bachelor of Computer Application (BCA) and Masters of Business Studies (MBS) program with affiliation from Tribhuvan University.</p>
+                   
+                <p>The inspiration derived from this outstanding success in managing the school, quite naturally, has led us to conduct a college of our own, hence Kathmandu BernHardt College (KBC). The atmosphere of KBC positively enhances the learning process of students. It is situated in the quiet atmosphere at Bafal Ring Road within easy reach of major locations of Kathmandu - the capital city. Peaceful, safe, independent cafeteria, spacious sports field and friendly academic environments are the essence that makes BernHardt unique as ideal study center.</p>
+
+                In 24th February 2020, UGC decided for the Accreditation and on 6th March 2020, Kathmandu BernHardt College was declared as the <b>First Private QAA College in Nepal.</b> The college was also awarded as the best private college of the year 2076.</p><br>
+                  <a href="#"><div class="btn btn-info">Know More <i class="fal fa-long-arrow-right"></i></div></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="gap-20 show-mb"></div>
+              <div class="register">
+                <h3>Get Quick Registration!</h3>
+                <form method="POST" action="/callback_request">
+                  <input type="hidden" name="_token" value="EXUueZqtkv3eXn8FY47LDCFh1i07x6WWcwUE5yw5">
+                  
+                  
+                  <div class="form-group ">
+                    <input type="text" placeholder="Full Name" name="name" class="form-control" value="">
+                    <small class="text-danger"></small>
+                  </div>
+                  <div class="form-group ">
+                    <input type="email" placeholder="Email" name="email" class="form-control" value="">
+                    <small class="text-danger"></small>
+                  </div>
+                  <div class="form-group ">
+                    <input type="text" placeholder="Phone" name="phone" class="form-control" value="">
+                    <small class="text-danger"></small>
+                  </div>
+                  <div class="form-group ">
+                      <select name="course" class="form-control">
+                        <option value="">Select Course</option>
+                                          <option value="BA">BA</option>
+                                          <option value="BBM">BBM</option>
+                                          <option value="BBS">BBS</option>
+                                          <option value="BCA">BCA</option>
+                                          <option value="BScCSIT">BScCSIT</option>
+                                          <option value="BSW">BSW</option>
+                                        </select>
+                      <small class="text-danger"></small>
+                    <!-- <input type="text" placeholder="course" name="course" class="form-control">-->
+                  </div>
+                  <div class="form-group ">
+                    <textarea class="form-control" rows="3" name="msg" placeholder="Message here.."></textarea>
+                    <small class="text-danger"></small>
+                  </div>
+                  <div class="text-right">
+                    <input type="submit" class="btn btn-primary" value="Submit Request">
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="col-md-12">
+        <hr>
+      </div>
+      <div class="col-md-4">
+        <h3>Message from <span>Chairman</span></h3>
+        <img src="./img/2.jpg" height="70px" width="70px" class="img-fluid img-lft" alt="chairman">
+        <p style="text-align: justify;">The students are awarded as the Best in different contest like Hackathon, TU BSc. CSIT Basketball Tournament-2076 and other different contests and tournaments organized by different colleges and institutions. All these achievements are the signposts which has made it the center of Excellency. As KBC has been co-coordinating with different national and international organizations, it is successful to provide a proper platform for the students through placements.The peaceful and wide area, hardworking and dedicated staff, skilled and experienced faculties and the visionary management committee are the solid foundations behind the attainment. 
+          <a href="/page/message-from-chairman/2"><strong>Read More <i class="fal fa-long-arrow-right"></i></strong></a><br><br><strong>Ram Bahadur Pachabhaiya</strong><br>Chairperson<br><em>College Management Committee</em></p>
+      </div>
+      <div class="col-md-4">
+        <div class="gap-20 show-mb"></div>
+        <h3>Message from <span>Campus Chief</span></h3>
+        <img src="./img/3.jpg" height="70px" width="70px" class="img-fluid img-lft" alt="campus chief">
+        <p style="text-align: justify;" >  
+            Kathmandu BernHardt College has been proved as the milestone of quality education in the Western part of Kathmandu valley since 2060 B.S. No any obstacles have detained it marching steps toward quality education up to now. It is possible with the proper coordination of all its stakeholders. As a result, the Ministry of Education Nepal has rewarded it with the prize of The First Private College of Nepal on the occasion of 40th National Education Day 2076 and The International Literacy Day 2019. Moreover, New Business Age, has granted it the position of 2nd Best MBS College of Nepal in June 21, 2019. The most important and recent example of its accomplishment is: being selected at the national level by the University Grants Commission with the grant of the international accreditation. KBC, now, is able to achieve the position of the first QAA accredited private college among the Tribhuwan University affiliates.<a href="/page/message-from-campus-chief/3"><strong>Read More <i class="fal fa-long-arrow-right"></i></strong></a><br><br><strong>Chiranjivi Kumar Wagle</strong><br>Campus Chief</p>
+      </div>
+      <div class="col-md-4">
+        <div class="gap-20 show-mb"></div>
+        <h3>College <span>Notices</span></h3>
+        <ul style="text-align: justify;">
+                      <li class="d-flex align-items-center"><a href="#">TU Exam Form Bachelor First Year 2078</a></li>
+                      <li class="d-flex align-items-center"><a href="#">Notice About COVID-19</a></li>
+                      <li class="d-flex align-items-center"><a href="#">Practical Exam of BSc CSIT 4th Sem</a></li>
+                      <li class="d-flex align-items-center"><a href="#">Pre-Board Examination Re-Schedule of BCA 2nd, 4th and BBA 2nd Semester 2078</a></li>
+                      <li class="d-flex align-items-center"><a href="#">Notice about Holidays 2078</a></li>
+                    <li><a href="#"><div class="btn btn-success">View All Notices</div></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div> <!-- /about register -->
+
+<DIV><hr></DIV>
+
+<div class="profile">
+    <div class="m"> 
+        <p> <b>1000+ </b>   <br> <br>   STUDENTS </p>
+    </div>
+    <div class="n"> 
+        <p> <b>150+ </b>   <br> <br>   TEACHERS</p>
+    </div>
+    <div class="o"> 
+        <p> <b>10+ </b>   <br> <br>   FACULTIES </p>
+    </div>
+    <div class="p"> 
+        <p> <b>100% </b>   <br> <br>   RESULT </p>
+    </div>
+</div>
+
+<DIV><HR></DIV>
+
+<h1 style="text-align: center;">GALLERY</h1>
+
+  <div class="division">
+    <div class="in">
+        <img src="./img/g1.png" alt="">'
+        <img src="./img/g2.jpg" alt="">
+        <img src="./img/g3.jpg" alt="">
+        <img src="./img/g4.jpg" alt="">
+        <img src="./img/g5.png" alt="">
+        <img src="./img/g6.jpg" alt="">
+        <img src="./img/g7.jpg" alt="">
+        <img src="./img/g8.jpg" alt="">
+    </div>
+</div>
+<div class="row">
+    <hr>
+</div>
+<br><br>
+
+<div class="container">
+    <p class="neb"> <h1 style="text-align: center;">OUR COURSES</h1> </p>
+</div>
+
+
+
+<div class="b">
+    
+    <div class="e"> 
+        <img src="./img/c.jpg">
+            <p>The objective of the BBS programme of Tribhuvan University at the FOM is to develop students into competent managers for any sector of organized activity. The programme is based on the principle that graduates will spend a major portion of their life in a constantly changing environment. Therefore, the student should have an  opportunity to obtain a broad knowledge of the concepts and reality- based skills underlying the operation and management of organizations. In Nepal more than 680 colleges offer BBS program.
+
+                Upon graduation, students should be equipped to function as a manager in business, industry and government. </p>
+    </div>
+    <div class="f">
+        <img src="./img/d.png">
+            <p>Bachelor of Social Work (B.S.W) is a three-year undergraduate degree that offers knowledge and skills to aspirants to prepare them for a professional career in social welfare. The course is divided into six semesters into most of the universities and colleges. Candidates can undertake BSW as a full-time course or even pursue it as a Correspondence/ Distance Education course. BSW course mostly comprises of three major parts which are foundation course, elective course and fieldwork.
+
+                BSW course is offered in both English and Hindi language. Some common topics that candidates are made to study in a BSW course include  to Social Work  </p>
+    </div>
+    <div class="d">
+        <img src="./img/a.gif">
+            <p>Bachelors of Science in Computer Science and Information Technology (BSc. CSIT) is a four year course affiliated to Tribhuvan University designed to provide the student with all sorts of knowledge in the field of Information Technology and Computing. Currently 57 Colleges offers B.Sc CSIT program in Nepal.
+
+                BSc CSIT program involves, in addition to conventional lectures, a great deal of practical and project works. The program develops the underlying principles of both Computer Science and Information Technology and shows how these principles can be applied to real world problems. This program develops the skills that are essential for both computer professionals </p>
+    </div>
+    <div class="c"> 
+        <img src="./img/b.png">
+            <p>Tribhuvan University has launched Bachelor of Computer Application (BCA) program from the academic year 2074/75.  In the first phase, this program was launched in six (6) constituent campuses of Tribhuvan University and are allocated 35 seats each. The objective of the BCA program of Tribhuvan University is to produce high quality computer application users and developers. The program of study for Bachelor of Arts in Computer Application (BCA) is over a period of eight semesters (four academic years). The academic year begins in the September and February of each year. 
+
+                Purbanchal University and Pokhara University are also running BCA program in Nepal.</p>
+    </div>
+</div>
+
+<div>
+    <hr>
+</div>
+
+<br>
+
+<div class="parallex">
+    <p class="neb"> CONTACT US </p>
+</div>
+<div class="office">
+    <p class="me"> OUR COLLEGE </p>
+    <p class="you"> We'd love your feedback! </p>
+    <br>
+    <p class="they">&nbspBafal, Kathmandu, Nepal </p>
+    <p class="they">Phone: +977-998754367</p>
+    <p class="they">  Email: info@kbc.edu.np</p>
+</div>
+
+<div>
+    <hr>
+</div>
+
+<div>
+    <h3 style="text-align: center;">Find Us On Map</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2920.9173447900334!2d85.28100661443432!3d27.70180433234373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbbb5e9967c6a23e2!2sKathmandu%20BernHardt%20College!5e1!3m2!1sen!2snp!4v1624379020264!5m2!1sen!2snp" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+
+
+  <!-- FOOTER START -->
+  <div class="footer">
+    <div class="contain">
+    <div class="col">
+        <h1></h1>
+        <ul>
+            <img src="./img/logo.jpg" alt="" height="auto" width="150px">
+        </ul>
+    </div>
+    <div class="col">
+      <h1></h1>
+      <ul>
+        <li>About</li>
+      </ul>
+    </div>
+    <div class="col">
+      <h1></h1>
+      <ul>
+        <li>Mission</li>
+      </ul>
+    </div>
+    <div class="col">
+        <h1></h1>
+        <ul>
+          <li>Notices</li>
+        </ul>
+    </div>
+    <div class="col">
+        <h1></h1>
+        <ul>
+          <li>Web Chat</li>
+        </ul>
+    </div>
+    <div class="col">
+        <h1></h1>
+        <ul>
+          <li>Admission</li>
+        </ul>
+    </div>
+    <div class="col">
+        <h1></h1>
+        <ul>
+          <li>Enqueries</li>
+        </ul>
+    </div>
+    <div class="col">
+        <h1></h1>
+        <ul>
+          <li>Appointment</li>
+        </ul>
+    </div>
+    <div class="col">
+        <h1></h1>
+        <ul>
+          <li>Blogs</li>
+        </ul>
+    </div>
+    <div class="col">
+        <h1></h1>
+        <ul>
+          <li>Downloads</li>
+        </ul>
+    </div>
+    <div class="col">
+        <h1></h1>
+        <ul>
+          <li>Social Links</li>
+        </ul>
+    </div>
+  <div class="clearfix"></div>
+  </div>
+  </div>
+  <!-- END OF FOOTER -->
+
+  <div class="f-btm">
+                <p style="color: white; background-color: #3a0967; text-align: center;">&copy; Copyright 2021. All Rights Reserved at Kathmandu BernHardt College.</p>
+    </div>
+
+</body>
+</html>
